@@ -1,0 +1,31 @@
+let raceNumber = Math.floor(Math.random() * 1000);
+const earlyRunner = true;
+const age = 17;
+
+if (age >= 18 && earlyRunner === true) {
+  raceNumber += 1000;
+} else if (age >= 18 && earlyRunner === false) {
+  raceNumber += 1000;
+} else {
+  raceNumber += 1000;
+}
+
+raceNumber += 100;
+
+if (earlyRunner === true && age >= 18) {
+  console.log("Runner #" + raceNumber + " you will race at 9:30 am");
+} else if (earlyRunner === false && age >= 18) {
+  console.log("Runner #" + raceNumber + " you will race at 11:00 am");
+} else if (age < 18 && earlyRunner === true) {
+  console.log("Runner #" + raceNumber + " you will race at 12:30 pm");
+} else if (age < 18 && earlyRunner === false) {
+  console.log("Runner #" + raceNumber + " you will race at 2:00 pm");
+}
+
+const userName = 'Marvin';
+
+if (userName === 'Marvin') {
+  console.log(`Hello ${userName}!`);
+} else {
+  console.log('Hello!');
+}
